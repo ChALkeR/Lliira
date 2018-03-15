@@ -10,5 +10,12 @@ module.exports = {
   meetings: 12,
 
   // Quorum size. Meetings not reaching this will be cancelled.
-  quorum: 0.5 + 1e-6
+  quorum: 0.5 + 1e-6,
+
+  // Limits are lower bound coefficients compared to maximum _reachable_ values
+  // Everything below that will be ignored while bruteforcing
+  limits: {
+    participation: 0.6,
+    interaction: 0.6
+  },
 };
