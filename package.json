@@ -1,0 +1,24 @@
+{
+  "name": "lliira",
+  "version": "1.0.0",
+  "description": "Organize the best timeslots for a meeting based on probability scores",
+  "bin": "llira.js",
+  "scripts": {},
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChALkeR/Lliira.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChALkeR/Lliira/issues"
+  },
+  "files": [
+    "libs/**/*.js",
+    "config.js",
+    "llira.js"
+  ]
+}
