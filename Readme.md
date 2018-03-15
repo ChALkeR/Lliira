@@ -101,6 +101,16 @@ Scale for `avg`, `min`, and `fair` is `0,1`, scale for `stdev` is `0,0.5`.
 Good numbers for `avg`, `min`, and `fair` are the higher ones, good numbers for `stdev` are the
 smaller ones.
 
+## Quorum rule
+
+Quorum rule is enabled by default, but can be disabled in config.
+
+Meetings not reaching the quorum (e.g. «more than 50% people present», which is the default value)
+are considered cancelled and have zero resulting utility.
+
+That is taken into account automatically when [metrics](#metrics) are computed — metrics are already
+corrected by the probability of reaching the quorum at the selected time slots.
+
 ## Default parameters
 
 Parameters are bundled in `config.js`.
@@ -111,6 +121,8 @@ row will present at much 3 time slots to rotate between those (for regular meeti
 Default probability values for scores are `[0.02, 0.2, 0.5, 0.8, 0.94, 0.95]`.  
 That never reaches `0` and `1` on a purpose — those are not real-world probabilites.
 So `0` is not always 0% and `5` can not mean 100% attendance — unexpected things happen.
+
+Default quorum size is `0.5 + 1e-6`, which stands for «more than 50%».
 
 [tsv]: https://en.wikipedia.org/wiki/Tab-separated_values
 [standard deviation]: https://en.wikipedia.org/wiki/Standard_deviation
