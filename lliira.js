@@ -2,8 +2,11 @@
 
 'use strict';
 
+const { loadFile } = require('./lib/data.js');
 const { printShort } = require('./lib/utils.js');
 const { bruteforce } = require('./lib/main.js');
+
+loadFile(process.argv[2] || 'data.tsv');
 
 for (const info of bruteforce()) {
   printShort(info);
