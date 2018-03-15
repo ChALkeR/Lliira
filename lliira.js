@@ -5,6 +5,6 @@
 const { printShort } = require('./lib/utils.js');
 const { bruteforce } = require('./lib/main.js');
 
-for (const info of bruteforce(3)) {
+for (const info of bruteforce()) {
   printShort(info);
 }

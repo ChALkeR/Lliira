@@ -12,6 +12,9 @@ module.exports = {
   // Quorum size. Meetings not reaching this will be cancelled.
   quorum: 0.5 + 1e-6,
 
+  // The maximum number of meeting slots that could be rotated
+  slots: 3,
+
   // Limits are lower bound coefficients compared to maximum _reachable_ values
   // Everything below that will be ignored while bruteforcing
   limits: {
