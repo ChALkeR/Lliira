@@ -1,6 +1,6 @@
 {
   "name": "lliira",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Organize the best timeslots for a meeting based on probability scores",
   "bin": "lliira.js",
   "scripts": {},
