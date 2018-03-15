@@ -2,6 +2,8 @@
 
 Organize the best timeslots for a meeting based on probability scores.
 
+📝✨💃
+
 ## Input format
 
 Input is a [tsv][] file (for easier copy-pasting from spreadsheets).
