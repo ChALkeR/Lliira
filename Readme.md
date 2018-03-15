@@ -26,7 +26,7 @@ Rows could be prefixed with names.
 Alice	4	5	0	0	5	2
 John	4	5	5	4	2	5
 Maddy	3	2	5	0	4	4
-Mike	1	0	3	5	5	5
+Mike	1	0	3	5	5	4
 Peter	5	5	3	1	2	2
 ```
 
