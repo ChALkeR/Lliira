@@ -2,7 +2,7 @@
   "name": "lliira",
   "version": "1.0.0",
   "description": "Organize the best timeslots for a meeting based on probability scores",
-  "bin": "llira.js",
+  "bin": "lliira.js",
   "scripts": {},
   "engines": {
     "node": ">=8.0.0"
@@ -17,8 +17,8 @@
     "url": "https://github.com/ChALkeR/Lliira/issues"
   },
   "files": [
-    "libs/**/*.js",
+    "lib/**/*.js",
     "config.js",
-    "llira.js"
+    "lliira.js"
   ]
 }
