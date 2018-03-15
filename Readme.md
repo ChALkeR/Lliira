@@ -60,7 +60,7 @@ times: [ 1, 4, 5 ], participation: { avg: 0.6973, min: 0.6088, stdev: 0.0708, fa
 times: [ 0, 4, 4 ], participation: { avg: 0.7376, min: 0.6226, stdev: 0.122, fair: 0.9585 }, interaction: { avg: 0.5516, min: 0.364, stdev: 0.1283, fair: 0.7653 }
 ```
 
-Of that, `[4]` looks like the most tolerable time for a single meeting, and `[0, 4, 5]` looks to be
+Of that, `[ 4 ]` looks like the most tolerable time for a single meeting, and `[ 0, 4, 5 ]` looks to be
 a decent choice for rotating recurrent meetings. 
 
 ### Metrics
@@ -88,7 +88,7 @@ a decent choice for rotating recurrent meetings.
   * `min.interaction` is equal to the chance that the least overall probable interaction will happen
     in an average meeting.
 
-* `stdev` is a partition standard deviation over a set of average numbers for each entry.
+* `stdev` is a population [standard deviation][] over a set of average numbers for each entry.
   The lower `stdev` is, the more equal each entry is represented (i.e. all are equally good or bad).
 
 * `fair` is a non-linear metric that first tries to optimize the amount of entries that are
@@ -97,7 +97,7 @@ a decent choice for rotating recurrent meetings.
 Scale for `avg`, `min`, and `fair` is `0,1`, scale for `stdev` is `0,0.5`.
 
 Good numbers for `avg`, `min`, and `fair` are the higher ones, good numbers for `stdev` are the
-smaller ones`.
+smaller ones.
 
 ## Default parameters
 
@@ -111,3 +111,4 @@ That never reaches `0` and `1` on a purpose — those are not real-world probabi
 So `0` is not always 0% and `5` can not mean 100% attendance — unexpected things happen.
 
 [tsv]: https://en.wikipedia.org/wiki/Tab-separated_values
+[standard deviation]: https://en.wikipedia.org/wiki/Standard_deviation
