@@ -2,9 +2,11 @@
 
 'use strict';
 
-const { loadFile } = require('./lib/data.js');
-const { printShort } = require('./lib/utils.js');
-const { bruteforce } = require('./lib/main.js');
+const {
+  loadFile,
+  printShort,
+  bruteforce
+} = require('./lib.js');
 
 const data = loadFile(process.argv[2] || 'data.tsv');
 
