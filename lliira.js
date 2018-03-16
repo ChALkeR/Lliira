@@ -6,8 +6,8 @@ const { loadFile } = require('./lib/data.js');
 const { printShort } = require('./lib/utils.js');
 const { bruteforce } = require('./lib/main.js');
 
-loadFile(process.argv[2] || 'data.tsv');
+const data = loadFile(process.argv[2] || 'data.tsv');
 
-for (const info of bruteforce()) {
+for (const info of bruteforce(data)) {
   printShort(info);
 }
