@@ -73,7 +73,7 @@ a decent choice for rotating recurrent meetings.
   It is done per-person and measures the distribution of number of meetings visited by a person.
 
 * `interaction` is an analysis of interaction probabilites.
-  It is done per each unique pair of participats and analyzes the distribution of number of times
+  It is done per each unique pair of participants and analyzes the distribution of number of times
   that interaction happened.
 
 #### Group scores
