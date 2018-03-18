@@ -1,6 +1,6 @@
 const Lliira = require('lliira');
 const CodeMirror = require('codemirror');
-require('codemirror/mode/javascript/javascript.js');
+require('codemirror/mode/javascript/javascript');
 
 const input = document.querySelector('#code textarea');
 const output = document.querySelector("#result textarea");
@@ -18,10 +18,6 @@ const printer = CodeMirror.fromTextArea(output, {
 });
 
 let timeout;
-function schedule(delay = 100) {
-  clearTimeout(timeout);
-  timeout = setTimeout(execute, delay);
-}
 
 let value = '';
 function execute() {
@@ -36,6 +32,11 @@ function execute() {
     output.value += entry + '\n';
   }
   printer.setValue(output.value);
+}
+
+function schedule(delay = 100) {
+  clearTimeout(timeout);
+  timeout = setTimeout(execute, delay);
 }
 
 input.addEventListener('change', schedule);
