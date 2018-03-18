@@ -56,7 +56,7 @@ let savedHash;
 
 function saveHash() {
   const data = {
-    t: input.value
+    t: input.value.trim()
   };
   const parts = [];
   for (const key of Object.keys(data)) {
