@@ -76,6 +76,7 @@ textarea {
 #code, #code .CodeMirror, #code > textarea {
   width: 50vw;
   height: calc(100vh - 100px);
+  font-size: 1vw;
 }
 
 #result {
