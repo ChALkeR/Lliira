@@ -4,6 +4,9 @@ require('codemirror/mode/javascript/javascript.js');
 
 const input = document.querySelector('#code textarea');
 const output = document.querySelector("#result textarea");
+
+input.value = input.value.trim();
+
 const editor = CodeMirror.fromTextArea(input, {
   lineNumbers: true
 });
