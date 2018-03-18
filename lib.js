@@ -14,6 +14,7 @@ const {
 } = require('./lib/math.js');
 
 const {
+  formatShort,
   printShort,
   printFull,
 } = require('./lib/utils.js');
@@ -30,6 +31,7 @@ module.exports = {
   loadData,
   prepare,
   analyze,
+  formatShort,
   printShort,
   printFull,
   bruteforce,
