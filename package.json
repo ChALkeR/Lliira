@@ -8,7 +8,11 @@
   "engines": {
     "node": ">=8.0.0"
   },
-  "author": "",
+  "author": {
+    "name": "Nikita Skovoroda",
+    "email": "chalkerx@gmail.com",
+    "url": "https://github.com/ChALkeR"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
