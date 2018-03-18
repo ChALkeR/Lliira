@@ -14,10 +14,10 @@ body {
   text-align: center;
   height: 100px;
   width: 100vw;
-  background: radial-gradient(at top center, #f82, transparent),
-              radial-gradient(at bottom left, #f22, transparent),
-              radial-gradient(at bottom right, #ff2, transparent),
-              #999;
+  background: radial-gradient(ellipse at bottom left, #f22, transparent 90%),
+              radial-gradient(ellipse at bottom right, #ff2, transparent 90%),
+              radial-gradient(ellipse at top center, #f82, transparent),
+              #aaa;
 }
 
 #title {
