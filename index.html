@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Lliira">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://unpkg.com/unquire@1"></script>
+    <title>Lliira</title>
+  </head>
+  <body data-require-main="./main.js">
+    <header id="header">
+      <a id="github" href="https://github.com/ChALkeR/Lliira">View on GitHub</a>
+      <h1 id="title">Lliira</h1>
+      <h2 id="tagline">Organize the best timeslots for a meeting based on probability scores. 📝✨💃</h2>
+      <div id="buttons">
+        <p><a href="https://www.npmjs.com/package/lliira"><img src="https://img.shields.io/npm/v/lliira.svg" alt="npm"></a>
+        <a href="https://github.com/ChALkeR/Lliira/releases"><img src="https://img.shields.io/github/tag/ChALkeR/Lliira.svg" alt="GitHub tag"></a></p>
+      </div>
+    </header>
+
+    <div id="code">
+<textarea>
+Alice	4	5	0	0	5	2
+John	4	5	5	4	2	5
+Maddy	3	2	5	0	4	4
+Mike	1	0	3	5	5	4
+Peter	5	5	3	1	2	2
+</textarea>
+    </div>
+
+    <div id="result">
+      <textarea readonly></textarea>
+    </div>
+
+    <footer id="footer">
+    </footer>
+  </body>
+</html>

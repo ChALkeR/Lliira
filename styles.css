@@ -1,0 +1,87 @@
+body {
+  font-family: 'PT Sans', 'Liberation Sans', 'Calibri', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+/*
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+*/
+}
+
+#header {
+  color: #fff;
+  text-align: center;
+  height: 100px;
+  width: 100vw;
+  background: radial-gradient(at top center, #f82, transparent),
+              radial-gradient(at bottom left, #f22, transparent),
+              radial-gradient(at bottom right, #ff2, transparent),
+              #999;
+}
+
+#title {
+  margin: 0;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+#tagline {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: -1px;
+}
+
+#github {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  text-decoration: none;
+  padding: 7px 45px 7px 10px;
+  color: #fff;
+  background: url('./octocat-mark.svg') #08b no-repeat 95% 50%;
+  min-width: 110px;
+  background-size: 30px;
+  font-weight: bold;
+  border-radius: 0 0 5px 5px;
+}
+
+#buttons {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  text-align: right;
+}
+
+#buttons p {
+  margin: 5px 0;
+}
+
+#footer {
+  width: 100vw;
+  display: none;
+}
+
+textarea {
+  box-sizing: border-box;
+  margin: 0;
+  display: block;
+}
+
+#result, #result .CodeMirror, #result > textarea,
+#code, #code .CodeMirror, #code > textarea {
+  width: 50vw;
+  height: calc(100vh - 100px);
+}
+
+#result {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#result .CodeMirror, #result textarea {
+  background: #f0f0f0;
+}
