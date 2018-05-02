@@ -29,7 +29,23 @@ function execute() {
   value = input.value;
   const data = Lliira.loadTsv(value);
   output.value = '';
-  for (const info of Lliira.bruteforce(data)) {
+  const entries = [...Lliira.bruteforce(data)];
+  entries.sort((av, bv) => {
+    const a = av.scores.participation;
+    const b = bv.scores.participation;
+    if (a.fair > b.fair) return -1;
+    if (a.fair < b.fair) return 1;
+    if (a.min > b.min) return -1;
+    if (a.min < b.min) return 1;
+    if (a.avg > b.avg) return -1;
+    if (a.avg < b.avg) return 1;
+    if (a.stdev < b.stdev) return -1;
+    if (a.stdev > b.stdev) return 1;
+    if (a.n5 > b.n5) return -1;
+    if (a.n5 < b.n5) return 1;
+    return 0;
+  });
+  for (const info of entries) {
     const entry = Lliira.formatShort(info)
       .replace(/, (participation|interaction)/g, '\n\t$1');
     output.value += entry + '\n';
