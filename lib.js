@@ -15,7 +15,9 @@ const {
 
 const {
   formatShort,
+  formatPretty,
   printShort,
+  printPretty,
   printFull,
 } = require('./lib/utils.js');
 
@@ -32,7 +34,9 @@ module.exports = {
   prepare,
   analyze,
   formatShort,
+  formatPretty,
   printShort,
+  printPretty,
   printFull,
   bruteforce,
 };

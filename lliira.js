@@ -4,12 +4,12 @@
 
 const {
   loadFile,
-  printShort,
+  printPretty,
   bruteforce
 } = require('./lib.js');
 
 const data = loadFile(process.argv[2] || 'data.tsv');
 
 for (const info of bruteforce(data)) {
-  printShort(info);
+  printPretty(info);
 }
