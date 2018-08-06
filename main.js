@@ -46,8 +46,7 @@ function execute() {
     return 0;
   });
   for (const info of entries) {
-    const entry = Lliira.formatShort(info)
-      .replace(/, (participation|interaction)/g, '\n\t$1');
+    const entry = Lliira.formatPretty(info);
     output.value += entry + '\n';
   }
   printer.setValue(output.value);
