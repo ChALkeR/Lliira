@@ -1,7 +1,7 @@
 const Lliira = require('lliira');
 const lzstring = require('lz-string');
-const CodeMirror = require('codemirror');
-require('codemirror/mode/javascript/javascript');
+const CodeMirror = require('codemirror@5');
+require('codemirror@5/mode/javascript/javascript');
 
 const input = document.querySelector('#code textarea');
 const output = document.querySelector("#result textarea");
